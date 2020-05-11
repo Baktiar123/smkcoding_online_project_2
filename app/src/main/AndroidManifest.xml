@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ViewPagerAdapter"></activity>
+        <activity android:name=".GithubFragment" />
+        <activity android:name=".ProfilFragment" />
+        <activity android:name=".Fragment_MyFriends" />
+        <activity android:name=".Fragment_Github" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
