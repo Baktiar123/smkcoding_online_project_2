@@ -76,16 +76,11 @@ class GithubFragment : Fragment() {
     private fun tampilGithubUser(githubUsers: List<GithubUserItem>) {
         listGithubUser.layoutManager = LinearLayoutManager(context)
         listGithubUser.adapter = GithubUserAdapter(context!!, githubUsers) {
-
             val githubUser = it
             tampilToast(context!!, githubUser.login)
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        this.clearFindViewByIdCache()
-    }
 }
 
 
