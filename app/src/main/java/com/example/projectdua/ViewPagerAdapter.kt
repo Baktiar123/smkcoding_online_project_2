@@ -1,7 +1,5 @@
 package com.example.projectdua
 
-import android.content.Context
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
@@ -13,16 +11,15 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity):
 
     override fun createFragment(position: Int): Fragment {
         when (position) {
-            0 -> { return Fragment_MyFriends() }
-            1 -> { return GithubFragment() }
-            2 -> { return ProfilFragment() }
+            0 -> { return ProfilFragment() }
+            1 -> { return ProvinsiFragment() }
+            2 -> { return Fragment_MyFriends() }
             else -> {
-                return GithubFragment()
+                return ProvinsiFragment()
             }
         }
     }
     override fun getItemCount(): Int {
         return JUMLAH_MENU
     }
-
 }
