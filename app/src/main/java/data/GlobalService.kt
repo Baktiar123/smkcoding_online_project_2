@@ -2,7 +2,9 @@ package data
 
 import com.example.projectdua.GlobalItem
 import retrofit2.Call
+import retrofit2.http.GET
 
 interface GlobalService {
-    fun getUsers(): Call<List<GlobalItem>>
+    @GET("/")
+    fun getGlobalApi(): Call<List<GlobalItem>>
 }

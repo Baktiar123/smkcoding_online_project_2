@@ -7,3 +7,4 @@ data class ProvinsiItem(
     @SerializedName("attributes")
     val attributes: Attributes
 )
+

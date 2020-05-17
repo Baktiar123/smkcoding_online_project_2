@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,13 +10,16 @@
         android:hint="Data Pasien di Indonesia"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:id="@+id/textNegara"/>
 
         <LinearLayout
             android:layout_marginLeft="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/linearNegara"
+            android:layout_below="@id/textNegara">
             <TextView
                 android:id="@+id/txtName"
                 android:layout_width="wrap_content"
@@ -49,38 +52,41 @@
                 android:text="Dead"
                 android:textSize="16sp"/>
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Data Berdasarkan Provinsi"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:textAlignment="center"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Data Berdasarkan Provinsi"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:id="@+id/textDaerah"-->
+<!--        android:layout_below="@id/linearNegara"/>-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_below="@id/textDaerah">-->
 
-        <LinearLayout
-            android:layout_marginLeft="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/txtRegion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:textSize="18sp"/>
-            <TextView
-                android:id="@+id/txtUserRepo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email"
-                android:textSize="16sp"/>
-        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <TextView-->
+<!--                android:id="@+id/txtRegion"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Name"-->
+<!--                android:textSize="18sp"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/txtPositive"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Positive"-->
+<!--                android:textSize="16sp"/>-->
+<!--        </LinearLayout>-->
 
-    </LinearLayout>
-</ScrollView>
+<!--    </LinearLayout>-->
+</RelativeLayout>

@@ -16,7 +16,7 @@ import util.dismissLoading
 import util.showLoading
 import util.tampilToast
 import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.fragment__profil.*
+import kotlinx.android.synthetic.main.fragment_indonesia.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -31,7 +31,7 @@ class ProfilFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment__profil, container, false)
+        return inflater.inflate(R.layout.fragment_indonesia, container, false)
     }
     override fun onViewCreated(
         view: View,

@@ -10,7 +10,6 @@ import androidx.annotation.Nullable
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import data.GlobalService
 import data.ProvinsiService
 import data.apiRequest
 import data.httpClient
@@ -18,7 +17,7 @@ import util.dismissLoading
 import util.showLoading
 import util.tampilToast
 import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.fragment_global.*
+import kotlinx.android.synthetic.main.fragment_provinsi.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -32,9 +31,7 @@ class ProvinsiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_global,
-
-            container, false)
+        return inflater.inflate(R.layout.fragment_provinsi, container, false)
     }
     override fun onViewCreated(
         view: View,
@@ -72,14 +69,16 @@ class ProvinsiFragment : Fragment() {
             }
         })
     }
+
     private fun tampilGithubUser(githubUsers: List<ProvinsiItem>) {
-        listGlobal.layoutManager = LinearLayoutManager(context)
-        listGlobal.adapter = ProvinsiAdapter(context!!, githubUsers) {
+        listProvinsi.layoutManager = LinearLayoutManager(context)
+        listProvinsi.adapter = ProvinsiAdapter(context!!, githubUsers) {
 
             val githubUser = it
             tampilToast(context!!, githubUser.attributes.provinsi)
         }
     }
+
     override fun onDestroy() {
         super.onDestroy()
         this.clearFindViewByIdCache()

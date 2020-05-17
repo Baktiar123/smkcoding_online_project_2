@@ -13,7 +13,7 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity):
         when (position) {
             0 -> { return ProfilFragment() }
             1 -> { return ProvinsiFragment() }
-            2 -> { return Fragment_MyFriends() }
+            2 -> { return GlobalFragment() }
             else -> {
                 return ProvinsiFragment()
             }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/register"
+        android:layout_width="381dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/editText"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password" />
+    </RelativeLayout>
+
+</RelativeLayout>

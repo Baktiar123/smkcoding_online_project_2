@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.extensions.LayoutContainer
-import kotlinx.android.synthetic.main.global_item.*
+import kotlinx.android.synthetic.main.provinsi_item.*
 
 class ProvinsiAdapter(private val context: Context, private val items:
 List<ProvinsiItem>, private val listener: (ProvinsiItem)-> Unit) :
     RecyclerView.Adapter<ProvinsiAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        ViewHolder(context, LayoutInflater.from(context).inflate(R.layout.global_item,
+        ViewHolder(context, LayoutInflater.from(context).inflate(R.layout.provinsi_item,
             parent, false))
     override fun getItemCount(): Int {
         return items.size
@@ -25,7 +25,9 @@ List<ProvinsiItem>, private val listener: (ProvinsiItem)-> Unit) :
         RecyclerView.ViewHolder(containerView), LayoutContainer{
         fun bindItem(item: ProvinsiItem, listener: (ProvinsiItem) -> Unit) {
             txtRegion.text = item.attributes.provinsi
-            txtUserRepo.text = item.attributes.kasusPosi.toString()
+            txtPositive.text = item.attributes.kasusPosi.toString()
+            txtSemb.text = item.attributes.kasusSemb.toString()
+            txtDies.text = item.attributes.kasusMeni.toString()
 
             containerView.setOnClickListener { listener(item) }
         }
