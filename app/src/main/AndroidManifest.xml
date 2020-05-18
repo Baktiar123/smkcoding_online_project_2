@@ -12,11 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ViewPagerAdapter"></activity>
-        <activity android:name=".GithubFragment" />
         <activity android:name=".ProfilFragment" />
+        <activity android:name=".GithubFragment" />
         <activity android:name=".Fragment_MyFriends" />
         <activity android:name=".Fragment_Github" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
