@@ -1,4 +1,4 @@
-# smkcoding_online_project_2
+# InfoCovid.apk
 
 ![login](https://user-images.githubusercontent.com/54587655/82164603-9c8d7f00-98db-11ea-8cb5-398391661936.jpeg)
 
